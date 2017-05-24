@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Edu</title>
+		<link rel="stylesheet" href="../assets/index.css">
+
+		<!-- Fix for modules which support both browser and node -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+            <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script>if (window.module) module = window.module;</script>
+
+		<script src="login.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<center>
+					<h1>Log in</h1>
+				</center>
+			</header>
+
+			<section class="main">
+				<center>
+					<form id="login-form">
+						<input type="email" id="email" name="email">
+						<input type="password" id="password" name="password">
+						
+						<button id="login-btn" type="submit" value="submit">Log in</button>
+					</form>
+					<h2 id="success-msg" hidden>Success!</h2>
+				</center>
+            </section>
+			<footer></footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "name": "edu",
+  "productName": "Edu",
+  "version": "0.0.0",
+  "description": "Edu tools that don't suck",
+  "license": "MIT",
+  "repository": "BlueHatbRit/edu",
+  "author": {
+    "name": "Elliot Blackburn",
+    "email": "elliot.blackburn@gmail.com",
+    "url": "elliotblackburn.com"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "electron-debug": "^1.0.0",
+    "jquery": "^3.2.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron-packager": "^8.0.0",
+    "electron": "^1.3.3",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
